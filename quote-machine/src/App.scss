@@ -1,0 +1,108 @@
+
+
+.App {
+  text-align: center;
+
+  #quote-box {
+    max-width: 500px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+
+    #author {
+      text-align: end;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    #tweet-quote {
+      float: left;
+      font-size: 15px;
+      padding-top: 25px;
+      text-decoration: none;
+    }
+
+    #new-quote {
+      float: right;
+      color: white;
+      border-width: 0;
+      border-radius: 5px;
+      padding: 15px 17px;
+    }
+
+    #text {
+      position: relative;
+      padding: 0px;
+      margin: 0px;
+      #quote-left {
+        padding-right: 5px;
+        font-size: 3rem;
+      }
+    }
+    
+  }
+
+  #twitter {
+    font-size: 1.25rem;
+    padding-right: 3px;
+    
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  @media only screen and (max-width: 635px) {
+    #quote-box {
+      max-width: 400px;
+      padding: 50px;
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+    };
+  }
+  
+  @media only screen and (max-width: 540px) {
+    #quote-box {
+      max-width: 300px;
+      padding: 50px;
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+    };
+  }
+  
+  @media only screen and (max-width: 430px) {
+    #quote-box {
+      max-width: 200px;
+      padding: 50px;
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+    };
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+    
+    #tweet-quote {
+      text-align: center;
+      width: 100%;
+      margin-bottom: -25px;
+    }
+
+    #new-quote {
+      margin-top: 20px;
+      margin-bottom: -10px;
+    }
+  }
+}
